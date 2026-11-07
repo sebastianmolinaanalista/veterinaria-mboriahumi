@@ -12,12 +12,28 @@
     <!-- Agregar una fuente externa -->
 </head>
 
+<!-- pagina-veterinaria: Clase CSS propia / personalizada -->
 <body class="pagina-veterinaria">
     <header>
+        <!-- 
+          menu-principal: Clase CSS propia
+          bg-white: Fondo blanco (background white)
+          shadow-sm: Aplica una sombra suave en la parte inferior (shadow small)
+          sticky-top: Mantiene el menú pegado arriba al hacer scroll (posición pegajosa/fija)
+        -->
         <nav class="menu-principal bg-white shadow-sm sticky-top">
+            <!-- container: Centra el contenido y le da un ancho máximo adaptable según la pantalla -->
             <div class="container">
+                <!-- menu-logo: Clase CSS propia -->
                 <a class="menu-logo" href="#inicio">🐾Mboriahumi</a>
+                <!-- 
+                  barra-menu: Clase CSS propia
+                  ms-auto: Empuja el elemento hacia la derecha aplicando un margen a la izquierda (margin-start auto)
+                  flex-row: Alinea los elementos hijos en una fila horizontal (usando Flexbox)
+                  gap-3: Añade una separación uniforme entre los elementos hijos
+                -->
                 <ul class="barra-menu ms-auto flex-row gap-3">
+                    <!-- barra-menu-item y barra-menu-link: Clases CSS propias -->
                     <li class="barra-menu-item"><a class="barra-menu-link" href="#nosotros">Nosotros</a></li>
                     <li class="barra-menu-item"><a class="barra-menu-link" href="#equipo">Profesionales</a></li>
                     <li class="barra-menu-item"><a class="barra-menu-link" href="#especialidades">Especialidades</a>
@@ -29,40 +45,82 @@
         </nav>
     </header>
     <main>
+        <!-- 
+          portada-veterinaria: Clase CSS propia
+          py-5: Agrega relleno (padding) en el eje vertical (arriba y abajo) de nivel 5 (espaciado grande)
+        -->
         <section class="portada-veterinaria py-5" id="inicio">
+            <!-- container: Contenedor centrado; py-4: Padding vertical medio (arriba y abajo) -->
             <div class="container py-4">
+                <!-- 
+                  row: Define una fila dentro del sistema de rejilla (Grid) de Bootstrap
+                  align-items-center: Alinea verticalmente los elementos hijos al centro
+                  g-5: Establece una separación (gutter/espacio) grande entre las columnas
+                -->
                 <div class="row align-items-center g-5">
+                    <!-- col-6: Ocupa 6 de las 12 columnas disponibles (la mitad del ancho de la fila) -->
                     <div class="col-6">
+                        <!-- 
+                          text-uppercase: Transforma el texto a mayúsculas
+                          fw-semibold: Aplica un grosor de fuente semi-negrita (font-weight semibold)
+                          mb-2: Agrega un margen inferior (margin-bottom) de nivel 2
+                          etiqueta-verde: Clase CSS propia
+                        -->
                         <p class="text-uppercase fw-semibold mb-2 etiqueta-verde">Veterinaria en el norte de Misiones
                         </p>
+                        <!-- 
+                          display-5: Tipo de fuente destacada, grande y de estilo encabezado/portada
+                          fw-bold: Texto en negrita (font-weight bold)
+                        -->
                         <h1 class="display-5 fw-bold">Cuidamos a quienes te acompañan</h1>
+                        <!-- 
+                          lead: Aumenta el tamaño del texto para hacerlo destacar como párrafo principal o subtítulo
+                          my-4: Margen vertical (arriba y abajo) de nivel 4
+                        -->
                         <p class="lead my-4">Atención veterinaria responsable para que tus animales tengan una
                             vida más saludable.</p>
+                        <!-- 
+                          btn: Aplica la estructura base de un botón de Bootstrap
+                          boton-veterinaria: Clase CSS propia
+                          btn-lg: Botón de tamaño grande (button large)
+                          me-2: Margen a la derecha (margin-end) de nivel 2
+                          mb-2: Margen inferior (margin-bottom) de nivel 2
+                        -->
                         <a class="btn boton-veterinaria btn-lg me-2 mb-2" href="#contacto">Consultar / pedir turno</a>
+                        <!-- 
+                          btn: Estructura base de botón
+                          btn-outline-success: Botón con borde de color verde (éxito) y fondo transparente hasta pasar el mouse
+                          btn-lg: Botón de tamaño grande
+                          mb-2: Margen inferior de nivel 2
+                        -->
                         <a class="btn btn-outline-success btn-lg mb-2" href="protectora.html">Conocer la protectora</a>
                     </div>
+                    <!-- col-6: Ocupa la otra mitad (6 de 12 columnas) de la fila -->
                     <div class="col-6">
-                        <div class="espacio-imagen">
-                            Imagen principal de la veterinaria
-                        </div>
+                        <img src="./assets/img/vete-1.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Veterinaria Mboriahumi">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- py-5: Padding vertical; bg-white: Fondo de color blanco -->
         <section class="py-5 bg-white" id="nosotros">
+            <!-- container: Contenedor centrado; py-3: Padding vertical nivel 3 -->
             <div class="container py-3">
+                <!-- row: Fila del sistema de grilla; align-items-center: Centra verticalmente; g-5: Espaciado entre columnas -->
                 <div class="row align-items-center g-5">
                     <div class="col-6">
-                        <div class="espacio-imagen">
-                            Foto del local
-                        </div>
+                        <!-- espacio-imagen: Clase CSS propia -->
+                             <img src="./assets/img/vete-2.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Veterinaria Mboriahumi">
                     </div>
                     <div class="col-6">
+                        <!-- text-uppercase: Mayúsculas; fw-semibold: Seminegrita; mb-2: Margen inferior; etiqueta-rosado: Clase propia -->
                         <p class="text-uppercase fw-semibold mb-2 etiqueta-rosado">Quiénes somos</p>
+                        <!-- titulo-seccion: Clase CSS propia; fw-bold: Negrita -->
                         <h2 class="titulo-seccion fw-bold">Una veterinaria con vocación</h2>
                         <p>En Mboriahumi trabajamos para acompañar a las familias en el cuidado de sus animales, con
                             atención responsable y cercana.</p>
+                        <!-- mb-0: Quita completamente el margen inferior del elemento (margin-bottom: 0) -->
                         <p class="mb-0">Este espacio presenta nuestra historia y el compromiso con el bienestar animal
                             en nuestra comunidad.</p>
                     </div>
@@ -70,20 +128,51 @@
             </div>
         </section>
 
+        <!-- py-5: Padding vertical grande -->
         <section class="py-5" id="equipo">
             <div class="container py-3">
+                <!-- 
+                  text-center: Centra horizontalmente todo el texto dentro del contenedor
+                  mb-4: Margen inferior de nivel 4
+                -->
                 <div class="text-center mb-4">
                     <p class="text-uppercase fw-semibold mb-2 etiqueta-rosado">Nuestro equipo</p>
                     <h2 class="titulo-seccion fw-bold">Profesionales que cuidan</h2>
+                    <!-- text-secondary: Aplica un color de texto gris o secundario; mb-0: Sin margen inferior -->
                     <p class="text-secondary mb-0">Conocé a las personas que forman parte de Mboriahumi.</p>
                 </div>
+                <!-- 
+                  row: Fila del sistema de grilla
+                  justify-content-center: Centra las columnas horizontalmente dentro de la fila
+                  g-4: Separación entre columnas de nivel 4
+                -->
                 <div class="row justify-content-center g-4">
+                    <!-- col-5: Ocupa 5 de las 12 columnas (deja espacio a los lados al estar centrada) -->
                     <div class="col-5">
+                        <!-- 
+                          card: Estructura de tarjeta en Bootstrap (borde, fondo y bordes redondeados)
+                          h-100: Altura al 100% de su contenedor padre (para que ambas tarjetas tengan el mismo alto)
+                          border-0: Elimina el borde predeterminado de la tarjeta
+                          shadow-sm: Sombra suave
+                          text-center: Texto centrado
+                          p-3: Padding (relleno interno) de nivel 3 en todos sus lados
+                        -->
                         <article class="card h-100 border-0 shadow-sm text-center p-3">
-                            <div class="espacio-imagen foto-profesional mx-auto w-50"></div>
+                            <!-- 
+                              espacio-imagen y foto-profesional: Clases CSS propias
+                              mx-auto: Centra horizontalmente el bloque asignando márgenes automáticos a los lados (margin-x auto)
+                              w-50: Establece un ancho del 50% de su contenedor (width 50%)
+                            -->
+                            <div class="espacio-imagen foto-profesional mx-auto w-50">
+                                <!-- <img src="./assets/img/profesional-1.jpg" alt="Veterinario-1"> -->
+                            </div>
+                            <!-- card-body: Contenedor interno estándar para el cuerpo de la tarjeta -->
                             <div class="card-body">
+                                <!-- h5: Aplica el tamaño de fuente y estilización correspondiente a un encabezado h5; card-title: Estilo del título dentro de una card -->
                                 <h3 class="h5 card-title">Nombre del profesional</h3>
+                                <!-- text-success: Cambia el texto a color verde (éxito); fw-semibold: Seminegrita -->
                                 <p class="text-success fw-semibold">Medicina veterinaria</p>
+                                <!-- card-text: Estilo base para textos dentro de una card; text-secondary: Texto de color gris -->
                                 <p class="card-text text-secondary">Presentación breve del profesional y su experiencia.
                                 </p>
                             </div>
@@ -91,7 +180,9 @@
                     </div>
                     <div class="col-5">
                         <article class="card h-100 border-0 shadow-sm text-center p-3">
-                            <div class="espacio-imagen foto-profesional mx-auto w-50"></div>
+                            <div class="espacio-imagen foto-profesional mx-auto w-50">
+                                <!-- <img src="./assets/img/profesional-2.jpg" alt="Veterinario-2"> -->
+                            </div>
                             <div class="card-body">
                                 <h3 class="h5 card-title">Nombre de la profesional</h3>
                                 <p class="text-success fw-semibold">Medicina veterinaria</p>
@@ -104,16 +195,20 @@
             </div>
         </section>
 
+        <!-- py-5: Padding vertical; bg-white: Fondo blanco -->
         <section class="py-5 bg-white" id="especialidades">
             <div class="container py-3">
                 <div class="text-center mb-4">
                     <p class="text-uppercase fw-semibold mb-2 etiqueta-rosado">Qué hacemos</p>
                     <h2 class="titulo-seccion fw-bold">Servicios y especialidades</h2>
                 </div>
+                <!-- row: Fila; g-3: Separación entre columnas nivel 3 -->
                 <div class="row g-3">
+                    <!-- col-4: Ocupa 4 de las 12 columnas (crea una grilla de 3 elementos por fila) -->
                     <div class="col-4">
                         <article class="card h-100 border-0 shadow-sm p-3">
                             <div class="card-body">
+                                <!-- icono-servicio: Clase CSS propia; mb-2: Margen inferior nivel 2 -->
                                 <div class="icono-servicio mb-2" >🩺</div>
                                 <h3 class="h5">Clínica general</h3>
                                 <p class="text-secondary mb-0">Controles de salud y consultas veterinarias.</p>
@@ -169,11 +264,13 @@
             </div>
         </section>
 
+        <!-- franja-protectora: Clase propia; py-5: Padding vertical; text-center: Texto centrado -->
         <section class="franja-protectora py-5 text-center">
             <div class="container py-2">
                 <p class="text-uppercase fw-semibold mb-2">También podés ayudar</p>
                 <h2 class="fw-bold">Cada animal merece una oportunidad</h2>
                 <p class="lead">Conocé el trabajo de la protectora y a los animales que buscan un hogar.</p>
+                <!-- btn: Botón base; boton-rosado: Clase propia; btn-lg: Botón grande; mt-2: Margen superior (margin-top) de nivel 2 -->
                 <a class="btn boton-rosado btn-lg mt-2" href="protectora.html">Visitar Patitas Coloradas</a>
             </div>
         </section>
@@ -181,15 +278,23 @@
         <section class="py-5" id="contacto">
             <div class="container py-3">
                 <div class="row g-5">
+                    <!-- col-5: Columna de 5/12 de ancho para la información -->
                     <div class="col-5">
                         <p class="text-uppercase fw-semibold mb-2 etiqueta-rosado">Estamos para ayudarte</p>
                         <h2 class="titulo-seccion fw-bold">Contacto</h2>
                         <p>Escribinos para consultar por nuestros servicios o solicitar un turno.</p>   
                     </div>
+                    <!-- col-7: Columna de 7/12 de ancho para el formulario -->
                     <div class="col-7">
                         <form>
+                            <!-- mb-3: Margen inferior de nivel 3 (utilizado comúnmente para separar grupos de formularios) -->
                             <div class="mb-3">
+                                <!-- 
+                                  form-label: Da estilos estándar para etiquetas de formulario (margen y disposición)
+                                  fg-warning: *Nota*: Puede ser un typo de `text-warning` o una clase propia de color
+                                -->
                                 <label class="form-label fg-warning" for="nombre">Nombre</label>
+                                <!-- form-control: Da formato a los inputs (100% de ancho, bordes suavemente redondeados, efectos de enfoque) -->
                                 <input class="form-control" id="nombre" name="nombre" type="text" required>
                             </div>
                             <div class="mb-3">
@@ -207,9 +312,18 @@
             </div>
         </section>
     </main>
+    
     <footer class="py-5">
-        <div class="container d-flex flex-row justify-content-between align-items- gap-2">
+        <!-- 
+          d-flex: Transforma el contenedor a un layout de Flexbox (display: flex)
+          flex-row: Alinea sus elementos horizontalmente
+          justify-content-between: Distribuye el espacio sobrante equitativamente entre los elementos (espacio a los extremos)
+          align-items-center: Alinea los elementos verticalmente al centro (aquí le falta el 'center' completo en la clase del HTML original)
+          gap-2: Espacio de nivel 2 entre los elementos
+        -->
+        <div class="container d-flex flex-row justify-content-between align-items- center gap-2">
             <p class="mb-0">🐾<strong>Mboriahumi</strong></p>
+            <!-- link-light: Le aplica un color de enlace claro/blanco adecuado para fondos oscuros -->
             <a class="link-light" href="#inicio">Volver al inicio</a>
             <a class="link-light" href="protectora.html">Patitas Coloradas</a>
         </div>

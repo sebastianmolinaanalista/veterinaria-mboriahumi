@@ -7,7 +7,7 @@
 }
 
 body {
-    min-width: 1200px;
+    /* min-width: 1200px; */
     color: var(--mboriahumi-texto);
     background: var(--mboriahumi-cremita);
 }
@@ -24,7 +24,7 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 75px;
-} 
+}
 
 .barra-menu {
     display: flex;
@@ -55,6 +55,10 @@ body {
     text-decoration: none;
 }
 
+.etiqueta-verde {
+    color: var(--mboriahumi-verde);
+}
+
 .etiqueta-rosado {
     color: var(--mboriahumi-rosado);
 }
@@ -79,31 +83,31 @@ body {
     background: var(--mboriahumi-verde);
 }
 
-.portada-protectora {
-    background: linear-gradient(120deg, #f8e6e1, #f4d6ce);
+.portada-veterinaria {
+    background: linear-gradient(120deg, #e8f1e8, #dcebe1);
 }
+
 
 .espacio-imagen {
     min-height: 230px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     display: grid;
     place-items: center;
     padding: 1rem;
-    /* color: #68534e; */
-    text-align: center;
     background: yellow;
     border: 5px solid;
     border-radius: 1rem;
 }
 
-.foto-adopcion {
-    min-height: 190px;
-    background: red;
+
+.foto-profesional {
+    min-height: 150px;
+    border-radius: 50%;
 }
 
-.galeria-adopcion .card {
-    color: var(--mboriahumi-texto);
+.icono-servicio {
+    font-size: 2rem;
 }
-/* no se ve nada fondo negro y letras blancas */
 
 .franja-protectora {
     color: white;

@@ -30,6 +30,7 @@
     </header>
 
     <main>
+
         <section class="portada-protectora py-5">
             <div class="container py-4">
                 <div class="row align-items-center g-5">
@@ -42,9 +43,7 @@
                         <a class="btn btn-outline-success btn-lg mb-2" href="#ayudar">Cómo ayudar</a>
                     </div>
                     <div class="col-6">
-                        <div class="espacio-imagen">
-                            Imagen de la protectora
-                        </div>
+                        <img src="./assets/img/protectora-1.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Protectora Patitas Rojas">
                     </div>
                 </div>
             </div>
@@ -60,7 +59,9 @@
                 <div class="row galeria-adopcion g-4">
                     <div class="col-4">
                         <article class="card h-100 border-0 shadow-sm p-3">
-                            <div class="espacio-imagen foto-adopcion">FOTO</div>
+                            <div class="foto-adopcion">
+                                <img src="./assets/img/animal-1.jpg" class="img-fluid rounded-6 shadow-sm" alt="Perro">
+                            </div>
                             <div class="card-body">
                                 <h3 class="h4 card-title">Luna</h3>
                                 <p class="text-danger fw-semibold">Perra - 2 años</p>
@@ -72,7 +73,9 @@
                     </div>
                     <div class="col-4">
                         <article class="card h-100 border-0 shadow-sm p-3">
-                            <div class="espacio-imagen foto-adopcion">FOTO</div>
+                            <div class="foto-adopcion">
+                                <img src="./assets/img/animal-6.jpg" class="img-fluid rounded-6 shadow-sm" alt="Gato">
+                            </div>
                             <div class="card-body">
                                 <h3 class="h4 card-title">Michi</h3>
                                 <p class="text-danger fw-semibold">Gato - 1 año</p>
@@ -84,7 +87,9 @@
                     </div>
                     <div class="col-4">
                         <article class="card h-100 border-0 shadow-sm p-3">
-                            <div class="espacio-imagen foto-adopcion">FOTO</div>
+                            <div class="foto-adopcion">
+                                <img src="./assets/img/animal-3.jpg" class="img-fluid rounded-6 shadow-sm" alt="Perro">
+                            </div>
                             <div class="card-body">
                                 <h3 class="h4 card-title">Toby</h3>
                                 <p class="text-danger fw-semibold">Perro - 3 años</p>
@@ -96,7 +101,9 @@
                     </div>
                     <div class="col-4">
                         <article class="card h-100 border-0 shadow-sm p-3">
-                            <div class="espacio-imagen foto-adopcion">FOTO</div>
+                            <div class="foto-adopcion">
+                                <img src="./assets/img/animal-2.jpg" class="img-fluid rounded-6 shadow-sm" alt="Gata">
+                            </div>
                             <div class="card-body">
                                 <h3 class="h4 card-title">Nina</h3>
                                 <p class="text-danger fw-semibold">Gata - 6 meses</p>
@@ -108,7 +115,9 @@
                     </div>
                     <div class="col-4">
                         <article class="card h-100 border-0 shadow-sm p-3">
-                            <div class="espacio-imagen foto-adopcion">FOTO</div>
+                            <div class="foto-adopcion">
+                                <img src="./assets/img/animal-7.jpg" class="img-fluid rounded-6 shadow-sm" alt="Perro">
+                            </div>
                             <div class="card-body">
                                 <h3 class="h4 card-title">Rocky</h3>
                                 <p class="text-danger fw-semibold">Perro - 4 años</p>
@@ -120,7 +129,9 @@
                     </div>
                     <div class="col-4">
                         <article class="card h-100 border-0 shadow-sm p-3">
-                            <div class="espacio-imagen foto-adopcion">FOTO</div>
+                            <div class="foto-adopcion">
+                                <img src="./assets/img/animal-9.jpg" class="img-fluid rounded-6 shadow-sm" alt="Gata">
+                            </div>
                             <div class="card-body">
                                 <h3 class="h4 card-title">Mora</h3>
                                 <p class="text-danger fw-semibold">Gata - 2 años</p>
@@ -134,16 +145,28 @@
             </div>
         </section>
 
+        <!-- franja-protectora: Clase CSS propia; py-5: Relleno vertical grande -->
         <section class="franja-protectora py-5" id="ayudar">
             <div class="container py-3">
                 <div class="text-center mb-4">
                     <p class="text-uppercase fw-semibold mb-2">Tu ayuda hace la diferencia</p>
                     <h2 class="fw-bold">¿Cómo podés colaborar?</h2>
                 </div>
+                <!-- 
+                  row: Fila
+                  justify-content-center: Centra las columnas horizontalmente
+                  g-3: Espaciado de nivel 3 entre las columnas
+                -->
                 <div class="row justify-content-center g-3">
+                    <!-- col-4: Ocupa 4 de 12 columnas (3 columnas en total en la fila) -->
                     <div class="col-4">
+                        <!-- card: Tarjeta; h-100: Altura completa; text-center: Centra el contenido; border-0: Sin borde; p-3: Relleno interno -->
                         <article class="card h-100 text-center border-0 p-3">
                             <div class="card-body">
+                                <!-- 
+                                  fs-1: Establece un tamaño de fuente muy grande (font-size 1) ideal para emojis o iconos
+                                  mb-2: Margen inferior de nivel 2
+                                -->
                                 <div class="fs-1 mb-2">🏠</div>
                                 <h3 class="h5">Adoptá</h3>
                                 <p class="text-secondary mb-0">Ofrecé un hogar con tiempo, cuidado y compromiso.</p>
@@ -174,19 +197,32 @@
             </div>
         </section>
 
+        <!-- py-5: Relleno vertical -->
         <section class="py-5" id="contacto">
             <div class="container py-3">
+                <!-- row: Fila; justify-content-center: Centrado horizontal; g-4: Espaciado de nivel 4 -->
                 <div class="row justify-content-center g-4">
+                    <!-- col-5: Columna de 5/12 de ancho para la información -->
                     <div class="col-5">
                         <p class="text-uppercase fw-semibold mb-2 etiqueta-rosado">¿Querés sumarte?</p>
                         <h2 class="titulo-seccion fw-bold">Contactanos</h2>
                         <p>Escribinos para consultar por una adopción o conocer las formas de colaborar.</p>
 
                     </div>
+                    <!-- col-7: Columna de 7/12 de ancho para el formulario -->
                     <div class="col-7">
                         <form>
+                            <!-- mb-3: Margen inferior nivel 3 para separar los campos del formulario -->
                             <div class="mb-3">
+                                <!-- 
+                                  form-label: Estilo estándar de Bootstrap para etiquetas de formularios
+                                  fg-warning: *Nota*: Posible clase personalizada o error tipográfico (en Bootstrap estándar sería `text-warning`)
+                                -->
                                 <label class="form-label fg-warning" for="nombre">Nombre</label>
+                                <!-- 
+                                  form-control: Da estilo a los inputs (ancho del 100%, bordes redondeados limpios y efectos visuales al hacer foco)
+                                  autocomplete="name": Ayuda al navegador a sugerir el nombre del usuario
+                                -->
                                 <input class="form-control" id="nombre" name="nombre" type="text" autocomplete="name"
                                     required>
                             </div>
@@ -198,6 +234,7 @@
                                 <label class="form-label fg-warning" for="mensaje">Contanos cómo querés ayudar</label>
                                 <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
                             </div>
+                            <!-- btn: Botón base; boton-rosado: Clase CSS propia -->
                             <button class="btn boton-rosado" type="button">Enviar consulta</button>
 
                         </form>
@@ -207,9 +244,18 @@
         </section>
     </main>
 
+    <!-- py-4: Relleno vertical de nivel 4 -->
     <footer class="py-4">
+        <!-- 
+          d-flex: Activa el modelo Flexbox
+          flex-row: Alinea los elementos en una fila horizontal
+          justify-content-between: Separa los elementos empujándolos hacia los extremos del contenedor
+          align-items-center: Centra los elementos verticalmente
+          gap-2: Espacio de separación horizontal de nivel 2
+        -->
         <div class="container d-flex flex-row justify-content-between align-items-center gap-2">
             <p class="mb-0">🐾<strong>Patitas Coloradas</strong></p>
+            <!-- link-light: Cambia el color del enlace a un tono claro/blanco, ideal para usar en pies de página -->
             <a class="link-light" href="index.html">Volver a Mboriahumi</a>
             <p> </p>
         </div>
