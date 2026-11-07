@@ -1,0 +1,118 @@
+:root {
+    --mboriahumi-verde: #176b4d;
+    --mboriahumi-verde-oscuro: #143b2e;
+    --mboriahumi-rosado: #e76f51;
+    --mboriahumi-cremita: #f7f5ef;
+    --mboriahumi-texto: #26352f;
+}
+
+body {
+    min-width: 1200px;
+    color: var(--mboriahumi-texto);
+    background: var(--mboriahumi-cremita);
+}
+
+.menu-principal {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: white;
+}
+
+.menu-principal > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+} 
+
+.barra-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-menu-link {
+    color: var(--mboriahumi-texto);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.barra-menu-link:hover {
+    color: var(--mboriahumi-verde);
+}
+
+.menu-logo,
+.titulo-seccion {
+    color: var(--mboriahumi-verde);
+}
+
+.menu-logo {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.etiqueta-rosado {
+    color: var(--mboriahumi-rosado);
+}
+
+.boton-veterinaria {
+    color: white;
+    background: var(--mboriahumi-verde);
+}
+
+.boton-veterinaria:hover {
+    color: white;
+    background: var(--mboriahumi-verde-oscuro);
+}
+
+.boton-rosado {
+    color: white;
+    background: var(--mboriahumi-rosado);
+}
+
+.boton-rosado:hover {
+    color: white;
+    background: var(--mboriahumi-verde);
+}
+
+.portada-protectora {
+    background: linear-gradient(120deg, #f8e6e1, #f4d6ce);
+}
+
+.espacio-imagen {
+    min-height: 230px;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    /* color: #68534e; */
+    text-align: center;
+    background: yellow;
+    border: 5px solid;
+    border-radius: 1rem;
+}
+
+.foto-adopcion {
+    min-height: 190px;
+    background: red;
+}
+
+.galeria-adopcion .card {
+    color: var(--mboriahumi-texto);
+}
+/* no se ve nada fondo negro y letras blancas */
+
+.franja-protectora {
+    color: white;
+    background: var(--mboriahumi-verde-oscuro);
+}
+
+footer {
+    color: #e8eee9;
+    background: #102d23;
+}
+
+/* agregar la parte responsive */
