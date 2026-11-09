@@ -28,15 +28,13 @@ body {
 .pagina-veterinaria .form-control,
 .pagina-veterinaria .form-select {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 0.375rem;
+    padding: 12px 16px; 
+    border-radius: 6px; 
     border: 1px solid var(--mboriahumi-cremita);
 }
 
 .menu-principal {
     position: sticky;
-    top: 0;
-    z-index: 1020;
     background: var(--mboriahumi-cremita);
 }
 
@@ -105,14 +103,19 @@ body {
     background: var(--mboriahumi-verde);
 }
 
+#inicio {
+    padding-top: 5rem !important;
+    padding-bottom: 4rem !important;
+}
+#nosotros {
+    padding-top: 5rem !important;
+    padding-bottom: 4rem !important;
+}
 .portada-veterinaria {
     background: linear-gradient(120deg, #e8f1e8, #dcebe1);
-    padding-top: 5rem;
-    padding-bottom: 4rem;
 }
-/* Corrección de tarjetas en la veterinaria (fondo claro) */
 .pagina-veterinaria .card-profesional {
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #e8f1e8, #dcebe1) !important;
     color: var(--mboriahumi-texto);
     border-radius: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -159,14 +162,11 @@ body {
     background-color: var(--mboriahumi-verde);
     border-radius: 4px;
 }
-/* 1. Quitamos el min-height fijo para que la sección no deje espacio en blanco abajo */
 #equipo {
     padding-bottom: 2rem !important;
 }
 
-/* 2. Centramos la pasarela y evitamos que se vea la tarjeta cortada al inicio */
 .pasarela-equipo-container {
-    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -176,21 +176,20 @@ body {
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;
     scrollbar-color: var(--mboriahumi-verde) #e2e8f0;
-    justify-content: flex-start; /* Alineado para permitir el scroll suave */
-    scroll-padding-left: 1rem;
+    justify-content: flex-start; 
+    scroll-padding-left: 20px;
 }
 
 .item-pasarela {
     min-width: 520px;
     max-width: 550px;
     flex: 0 0 auto;
-    scroll-snap-align: center; /* Centra la tarjeta al deslizar */
+    scroll-snap-align: center;
 }
 
-/* 3. Ajustamos el alto de la tarjeta para que respire mejor */
 .card-profesional {
     height: 480px !important;
-    background-color: #ffffff;
+    /* background-color: linear-gradient(120deg, #e8f1e8, #dcebe1) !important; */
     border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     transition: transform 0.3s ease;
@@ -200,14 +199,13 @@ body {
     transform: translateY(-5px);
 }
 
-/* 4. ¡Foto circular mucho más grande y protagonista! */
 .foto-profesional-wrapper {
-    width: 210px; /* Pasó a ser un círculo bien grande e imponente */
-    height: 210px;
+    width: 300px; 
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid var(--mboriahumi-verde);
-    background: #eaeaea;
+    background: var(--mboriahumi-cremita);
 }
 
 .foto-perfil-img {
