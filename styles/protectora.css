@@ -169,7 +169,7 @@ body {
 
 .card-donacion:hover {
     background-color: var(--mboriahumi-rosado);
-    border-color: var(--mboriahumi-verde-rosado);
+    border-color: var(--mboriahumi-verde-oscuro);
 }
 
 .card-donacion:hover .iconito {

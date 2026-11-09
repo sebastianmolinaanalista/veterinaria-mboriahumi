@@ -104,18 +104,18 @@ body {
 }
 
 #inicio {
-    padding-top: 5rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 5rem ;
+    padding-bottom: 4rem ;
 }
 #nosotros {
-    padding-top: 5rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 5rem ;
+    padding-bottom: 4rem ;
 }
 .portada-veterinaria {
     background: linear-gradient(120deg, #e8f1e8, #dcebe1);
 }
 .pagina-veterinaria .card-profesional {
-    background: linear-gradient(135deg, #e8f1e8, #dcebe1) !important;
+    background: linear-gradient(135deg, #e8f1e8, #dcebe1) ;
     color: var(--mboriahumi-texto);
     border-radius: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -123,7 +123,7 @@ body {
 
 .pagina-veterinaria .card-profesional:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) ;
 }
 
 /* Estilo y contenedor de la foto circular perfecta */
@@ -163,7 +163,7 @@ body {
     border-radius: 4px;
 }
 #equipo {
-    padding-bottom: 2rem !important;
+    padding-bottom: 2rem ;
 }
 
 .pasarela-equipo-container {
@@ -188,8 +188,7 @@ body {
 }
 
 .card-profesional {
-    height: 480px !important;
-    /* background-color: linear-gradient(120deg, #e8f1e8, #dcebe1) !important; */
+    height: 480px ;
     border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     transition: transform 0.3s ease;
