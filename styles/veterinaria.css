@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --mboriahumi-verde: #176b4d;
+    --mboriahumi-verde-oscuro: #143b2e;
+    --mboriahumi-rosado: #e76f51;
+    --mboriahumi-cremita: #f7f5ef;
+    --mboriahumi-texto: #26352f;
+}
+
+body {
+    font-family: "Montserrat";
+    color: var(--mboriahumi-texto);
+    background: var(--mboriahumi-cremita);
+}
+
+.pagina-veterinaria .form-label {
+    color: var(--mboriahumi-texto);
+    font-weight: 600;
+}
+
+.pagina-veterinaria .form-control,
+.pagina-veterinaria .form-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--mboriahumi-cremita);
+}
+
+.menu-principal {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: var(--mboriahumi-cremita);
+}
+
+.menu-principal>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+}
+
+.barra-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-menu-link {
+    color: var(--mboriahumi-texto);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.barra-menu-link:hover {
+    color: var(--mboriahumi-verde);
+}
+
+.menu-logo,
+.titulo-seccion {
+    color: var(--mboriahumi-verde);
+}
+
+.menu-logo {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.etiqueta-verde {
+    color: var(--mboriahumi-verde);
+}
+
+.etiqueta-rosado {
+    color: var(--mboriahumi-rosado);
+}
+
+.boton-veterinaria {
+    color: white;
+    background: var(--mboriahumi-verde);
+}
+
+.boton-veterinaria:hover {
+    color: white;
+    background: var(--mboriahumi-verde-oscuro);
+}
+
+.boton-rosado {
+    color: white;
+    background: var(--mboriahumi-rosado);
+}
+
+.boton-rosado:hover {
+    color: white;
+    background: var(--mboriahumi-verde);
+}
+
+.portada-veterinaria {
+    background: linear-gradient(120deg, #e8f1e8, #dcebe1);
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+/* Corrección de tarjetas en la veterinaria (fondo claro) */
+.pagina-veterinaria .card-profesional {
+    background-color: #ffffff;
+    color: var(--mboriahumi-texto);
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pagina-veterinaria .card-profesional:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Estilo y contenedor de la foto circular perfecta */
+.foto-profesional-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--mboriahumi-verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeaea;
+}
+
+.foto-perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Configuración de la pasarela deslizante (Slider horizontal) */
+.pasarela-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--mboriahumi-verde) #e2e8f0;
+}
+
+.pasarela-track::-webkit-scrollbar {
+    height: 8px;
+}
+
+.pasarela-track::-webkit-scrollbar-thumb {
+    background-color: var(--mboriahumi-verde);
+    border-radius: 4px;
+}
+/* 1. Quitamos el min-height fijo para que la sección no deje espacio en blanco abajo */
+#equipo {
+    padding-bottom: 2rem !important;
+}
+
+/* 2. Centramos la pasarela y evitamos que se vea la tarjeta cortada al inicio */
+.pasarela-equipo-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.pasarela-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--mboriahumi-verde) #e2e8f0;
+    justify-content: flex-start; /* Alineado para permitir el scroll suave */
+    scroll-padding-left: 1rem;
+}
+
+.item-pasarela {
+    min-width: 520px;
+    max-width: 550px;
+    flex: 0 0 auto;
+    scroll-snap-align: center; /* Centra la tarjeta al deslizar */
+}
+
+/* 3. Ajustamos el alto de la tarjeta para que respire mejor */
+.card-profesional {
+    height: 480px !important;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.card-profesional:hover {
+    transform: translateY(-5px);
+}
+
+/* 4. ¡Foto circular mucho más grande y protagonista! */
+.foto-profesional-wrapper {
+    width: 210px; /* Pasó a ser un círculo bien grande e imponente */
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--mboriahumi-verde);
+    background: #eaeaea;
+}
+
+.foto-perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-servicio {
+    background-color: var(--mboriahumi-cremita);
+    padding: 35px 35px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.card-servicio:hover {
+    background-color: var(--mboriahumi-verde-oscuro);
+    color: var(--mboriahumi-cremita);
+    border-color: var(--mboriahumi-verde-rosado);
+}
+
+.card-servicio:hover .iconito {
+    transform: scale(1.5);
+}
+
+.iconito {
+    font-size: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.franja-protectora {
+    color: white;
+    background: var(--mboriahumi-verde-oscuro);
+}
+
+footer {
+    color: #e8eee9;
+    background: #102d23;
+}
+
+footer .barra-menu-link {
+    color: #e8eee9;
+}
+
+footer .barra-menu-link:hover {
+    color: var(--mboriahumi-rosado);
+}
+
+/* agregar la parte responsive */
+@media (max-width: 768px) {
+    .menu-principal > .container {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .barra-menu {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .row > [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    .portada-veterinaria {
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    h1.display-5 {
+        font-size: 2rem;
+    }
+}

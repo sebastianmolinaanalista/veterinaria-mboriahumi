@@ -8,21 +8,22 @@
     <title>Patitas Coloradas | Protectora</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/protectora.css">
+    <link rel="stylesheet" href="./styles/protectora.css">
 </head>
 
 <body class="pagina-protectora">
     <header>
         <nav class="menu-principal bg-white shadow-sm sticky-top">
             <div class="container">
-                <a class="menu-logo" href="index.html">🐾 Mboriahumi</a>
+                <a class="menu-logo">💕Patitas coloradas</a>
                 <ul class="barra-menu ms-auto flex-row gap-3">
-                    <li class="barra-menu-item"><a class="barra-menu-link" href="index.html#nosotros">Veterinaria</a>
+                    <li class="barra-menu-item"><a class="barra-menu-link" href="#recomendaciones">Bienestar animal</a>
                     </li>
                     <li class="barra-menu-item"><a class="barra-menu-link" href="#adopcion">Adopción</a></li>
                     <li class="barra-menu-item"><a class="barra-menu-link" href="#ayudar">Cómo ayudar</a></li>
                     <li class="barra-menu-item"><a class="barra-menu-link" href="#contacto">Contacto</a></li>
-                    <li class="barra-menu-item"><a class="barra-menu-link" href="index.html">Veterinaria</a>
+                    <li class="barra-menu-item"><a class="barra-menu-link" href="index.html"
+                            target="_blank">Veterinaria</a>
                     </li>
                 </ul>
             </div>
@@ -30,7 +31,6 @@
     </header>
 
     <main>
-
         <section class="portada-protectora py-5">
             <div class="container py-4">
                 <div class="row align-items-center g-5">
@@ -39,11 +39,56 @@
                         <h1 class="display-5 fw-bold">Patitas Coloradas</h1>
                         <p class="lead my-4">Acompañamos a animales rescatados y promovemos la adopción responsable en
                             nuestra comunidad.</p>
-                        <a class="btn boton-rosado btn-lg me-2 mb-2" href="#adopcion">Conocer a los animales</a>
-                        <a class="btn btn-outline-success btn-lg mb-2" href="#ayudar">Cómo ayudar</a>
+                        <a class="btn boton-rosado" href="#adopcion">Conocer a los animales</a>
+                        <a class="btn boton-veterinaria" href="#ayudar">Cómo ayudar</a>
                     </div>
                     <div class="col-6">
-                        <img src="./assets/img/protectora-1.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Protectora Patitas Rojas">
+                        <img src="./assets/img/protectora-1.jpeg" class="img-fluid rounded-4 shadow-sm"
+                            alt="Protectora Patitas Rojas">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-white" id="recomendaciones">
+            <div class="container py-3">
+                <div class="text-center mb-4">
+                    <p class="text-uppercase fw-semibold mb-2 etiqueta-rosado">Bienestar animal</p>
+                    <h2 class="titulo-seccion fw-bold">Recomendaciones para un trato responsable</h2>
+                    <p class="text-secondary mb-0">Adoptar o cuidar a un animal implica un compromiso con su calidad de
+                        vida.</p>
+                </div>
+                <div class="row justify-content-center g-3">
+                    <div class="col-4">
+                        <article class="card-donacion h-100 text-center">
+                            <div class="card-donacion-body">
+                                <div class="iconito">🐾</div>
+                                <h3 class="h5">Compromiso a largo plazo</h3>
+                                <p class="text-secondary mb-0">Un animal no es un juguete; requiere tiempo, paciencia,
+                                    alimentación adecuada, paseos y atención veterinaria constante durante toda su vida.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <article class="card-donacion h-100 text-center">
+                            <div class="card-donacion-body">
+                                <div class="iconito">🩺</div>
+                                <h3 class="h5">Salud y prevención</h3>
+                                <p class="text-secondary mb-0">Mantené sus vacunas al día, realizá controles periódicos
+                                    con el veterinario y consultá siempre ante cualquier cambio de conducta o dolor.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <article class="card-donacion h-100 text-center">
+                            <div class="card-donacion-body">
+                                <div class="iconito">❤️</div>
+                                <h3 class="h4">Respeto y afecto</h3>
+                                <p class="text-secondary mb-0">Fomentá el trato basado en el cariño y el refuerzo
+                                    positivo. Nunca utilices la violencia; educar requiere paciencia y comprensión de
+                                    sus tiempos.</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -67,7 +112,7 @@
                                 <p class="text-danger fw-semibold">Perra - 2 años</p>
                                 <p class="card-text text-secondary">Amigable y tranquila. Busca una familia que le dé
                                     mucho cariño.</p>
-                                <a class="btn boton-veterinaria" href="#contacto">Consultar por adopción</a>
+                                <a class="btn boton-rosado" href="#contacto">Consultar por adopción</a>
                             </div>
                         </article>
                     </div>
@@ -81,7 +126,7 @@
                                 <p class="text-danger fw-semibold">Gato - 1 año</p>
                                 <p class="card-text text-secondary">Curioso y compañero. Le encanta jugar y descansar al
                                     sol.</p>
-                                <a class="btn boton-veterinaria" href="#contacto">Consultar por adopción</a>
+                                <a class="btn boton-rosado" href="#contacto">Consultar por adopción</a>
                             </div>
                         </article>
                     </div>
@@ -95,7 +140,7 @@
                                 <p class="text-danger fw-semibold">Perro - 3 años</p>
                                 <p class="card-text text-secondary">Activo y juguetón. Ideal para compartir paseos y
                                     aventuras.</p>
-                                <a class="btn boton-veterinaria" href="#contacto">Consultar por adopción</a>
+                                <a class="btn boton-rosado" href="#contacto">Consultar por adopción</a>
                             </div>
                         </article>
                     </div>
@@ -109,7 +154,7 @@
                                 <p class="text-danger fw-semibold">Gata - 6 meses</p>
                                 <p class="card-text text-secondary">Pequeña y dulce. Está lista para encontrar un hogar
                                     lleno de mimos.</p>
-                                <a class="btn boton-veterinaria" href="#contacto">Consultar por adopción</a>
+                                <a class="btn boton-rosado" href="#contacto">Consultar por adopción</a>
                             </div>
                         </article>
                     </div>
@@ -123,7 +168,7 @@
                                 <p class="text-danger fw-semibold">Perro - 4 años</p>
                                 <p class="card-text text-secondary">Noble y sociable. Disfruta de la compañía y de los
                                     paseos tranquilos.</p>
-                                <a class="btn boton-veterinaria" href="#contacto">Consultar por adopción</a>
+                                <a class="btn boton-rosado" href="#contacto">Consultar por adopción</a>
                             </div>
                         </article>
                     </div>
@@ -137,7 +182,7 @@
                                 <p class="text-danger fw-semibold">Gata - 2 años</p>
                                 <p class="card-text text-secondary">Serena y cariñosa. Busca un lugar tranquilo donde
                                     sentirse en casa.</p>
-                                <a class="btn boton-veterinaria" href="#contacto">Consultar por adopción</a>
+                                <a class="btn boton-rosado" href="#contacto">Consultar por adopción</a>
                             </div>
                         </article>
                     </div>
@@ -145,49 +190,37 @@
             </div>
         </section>
 
-        <!-- franja-protectora: Clase CSS propia; py-5: Relleno vertical grande -->
         <section class="franja-protectora py-5" id="ayudar">
             <div class="container py-3">
                 <div class="text-center mb-4">
                     <p class="text-uppercase fw-semibold mb-2">Tu ayuda hace la diferencia</p>
                     <h2 class="fw-bold">¿Cómo podés colaborar?</h2>
                 </div>
-                <!-- 
-                  row: Fila
-                  justify-content-center: Centra las columnas horizontalmente
-                  g-3: Espaciado de nivel 3 entre las columnas
-                -->
                 <div class="row justify-content-center g-3">
-                    <!-- col-4: Ocupa 4 de 12 columnas (3 columnas en total en la fila) -->
                     <div class="col-4">
-                        <!-- card: Tarjeta; h-100: Altura completa; text-center: Centra el contenido; border-0: Sin borde; p-3: Relleno interno -->
-                        <article class="card h-100 text-center border-0 p-3">
-                            <div class="card-body">
-                                <!-- 
-                                  fs-1: Establece un tamaño de fuente muy grande (font-size 1) ideal para emojis o iconos
-                                  mb-2: Margen inferior de nivel 2
-                                -->
-                                <div class="fs-1 mb-2">🏠</div>
-                                <h3 class="h5">Adoptá</h3>
+                        <article class="card-donacion h-100 text-center">
+                            <div class="card-donacion-body">
+                                <div class="iconito">🏠</div>
+                                <h3 class="h4">Adoptá</h3>
                                 <p class="text-secondary mb-0">Ofrecé un hogar con tiempo, cuidado y compromiso.</p>
                             </div>
                         </article>
                     </div>
                     <div class="col-4">
-                        <article class="card h-100 text-center border-0 p-3">
-                            <div class="card-body">
-                                <div class="fs-1 mb-2">🥫</div>
-                                <h3 class="h5">Doná insumos</h3>
+                        <article class="card-donacion h-100 text-center">
+                            <div class="card-donacion-body">
+                                <div class="iconito">🥫</div>
+                                <h3 class="h4">Doná insumos</h3>
                                 <p class="text-secondary mb-0">Consultanos qué alimentos, mantas o elementos hacen
                                     falta.</p>
                             </div>
                         </article>
                     </div>
                     <div class="col-4">
-                        <article class="card h-100 text-center border-0 p-3">
-                            <div class="card-body">
-                                <div class="fs-1 mb-2">🤝</div>
-                                <h3 class="h5">Difundí</h3>
+                        <article class="card-donacion h-100 text-center">
+                            <div class="card-donacion-body">
+                                <div class="iconito">🤝</div>
+                                <h3 class="h4">Difundí</h3>
                                 <p class="text-secondary mb-0">Compartí las historias para que lleguen a más personas.
                                 </p>
                             </div>
@@ -197,46 +230,70 @@
             </div>
         </section>
 
-        <!-- py-5: Relleno vertical -->
         <section class="py-5" id="contacto">
             <div class="container py-3">
-                <!-- row: Fila; justify-content-center: Centrado horizontal; g-4: Espaciado de nivel 4 -->
                 <div class="row justify-content-center g-4">
-                    <!-- col-5: Columna de 5/12 de ancho para la información -->
                     <div class="col-5">
                         <p class="text-uppercase fw-semibold mb-2 etiqueta-rosado">¿Querés sumarte?</p>
                         <h2 class="titulo-seccion fw-bold">Contactanos</h2>
-                        <p>Escribinos para consultar por una adopción o conocer las formas de colaborar.</p>
+                        <p class="mb-4">Escribinos para consultar por una adopción, coordinar un hogar de tránsito o
+                            conocer las formas de colaborar con la protectora.</p>
 
+                        <div class="d-flex flex-column gap-3 text-secondary">
+                            <div>
+                                <strong>📍 Ubicación:</strong><br>
+                                <span>Wanda, Misiones (Zona Norte)</span>
+                            </div>
+                            <div>
+                                <strong>🕒 Horarios de atención:</strong><br>
+                                <span>Lunes a Sábados: 9:00 a 18:00 hs</span>
+                            </div>
+                            <div>
+                                <strong>📧 Correo electrónico:</strong><br>
+                                <span>contacto@patitascoloradas.org</span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- col-7: Columna de 7/12 de ancho para el formulario -->
                     <div class="col-7">
-                        <form>
-                            <!-- mb-3: Margen inferior nivel 3 para separar los campos del formulario -->
+                        <form action="https://formspree.io/f/xoeeovwy" method="POST">
                             <div class="mb-3">
-                                <!-- 
-                                  form-label: Estilo estándar de Bootstrap para etiquetas de formularios
-                                  fg-warning: *Nota*: Posible clase personalizada o error tipográfico (en Bootstrap estándar sería `text-warning`)
-                                -->
-                                <label class="form-label fg-warning" for="nombre">Nombre</label>
-                                <!-- 
-                                  form-control: Da estilo a los inputs (ancho del 100%, bordes redondeados limpios y efectos visuales al hacer foco)
-                                  autocomplete="name": Ayuda al navegador a sugerir el nombre del usuario
-                                -->
-                                <input class="form-control" id="nombre" name="nombre" type="text" autocomplete="name"
-                                    required>
+                                <label class="form-label" for="nombre">Nombre y apellido</label>
+                                <input class="form-control" id="nombre" name="nombre" type="text" required>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label fg-warning" for="contacto">Correo o teléfono</label>
+                                <label class="form-label" for="contacto">Correo electrónico o
+                                    teléfono</label>
                                 <input class="form-control" id="contacto" name="contacto" type="text" required>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label fg-warning" for="mensaje">Contanos cómo querés ayudar</label>
-                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                                <label class="form-label" for="tipo-consulta">Motivo de contacto</label>
+                                <select class="form-select" id="tipo-consulta" name="tipo_consulta" required>
+                                    <option value="" selected disabled>Seleccioná una opción...</option>
+                                    <option value="adopcion">Adopción responsable</option>
+                                    <option value="transito">Hogar de tránsito</option>
+                                    <option value="donacion">Donación de insumos</option>
+                                    <option value="otro">Otra consulta</option>
+                                </select>
                             </div>
-                            <!-- btn: Botón base; boton-rosado: Clase CSS propia -->
-                            <button class="btn boton-rosado" type="button">Enviar consulta</button>
-
+                            <div class="mb-3">
+                                <label class="form-label" for="animal-interes">Animal de interés</label>
+                                <select class="form-select" id="animal-interes" name="animal_interes">
+                                    <option value="" selected>Ninguno en particular / General</option>
+                                    <option value="luna">Luna (Perra - 2 años)</option>
+                                    <option value="michi">Michi (Gato - 1 año)</option>
+                                    <option value="toby">Toby (Perro - 3 años)</option>
+                                    <option value="nina">Nina (Gata - 6 meses)</option>
+                                    <option value="rocky">Rocky (Perro - 4 años)</option>
+                                    <option value="mora">Mora (Gata - 2 años)</option>
+                                    <option value="perro-general">Cualquier perro</option>
+                                    <option value="gato-general">Cualquier gato</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="mensaje">Mensaje o comentarios adicionales</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                            </div>
+                            <button class="btn boton-rosado" type="submit">Enviar consulta</button>
                         </form>
                     </div>
                 </div>
@@ -244,23 +301,25 @@
         </section>
     </main>
 
-    <!-- py-4: Relleno vertical de nivel 4 -->
     <footer class="py-4">
-        <!-- 
-          d-flex: Activa el modelo Flexbox
-          flex-row: Alinea los elementos en una fila horizontal
-          justify-content-between: Separa los elementos empujándolos hacia los extremos del contenedor
-          align-items-center: Centra los elementos verticalmente
-          gap-2: Espacio de separación horizontal de nivel 2
-        -->
-        <div class="container d-flex flex-row justify-content-between align-items-center gap-2">
-            <p class="mb-0">🐾<strong>Patitas Coloradas</strong></p>
-            <!-- link-light: Cambia el color del enlace a un tono claro/blanco, ideal para usar en pies de página -->
-            <a class="link-light" href="index.html">Volver a Mboriahumi</a>
-            <p> </p>
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0 text-center text-md-start">
+                <p class="mb-1 fw-bold">🐾 Patitas Coloradas</p>
+            </div>
+            <ul class="barra-menu justify-content-end mb-0">
+                <li class="barra-menu-item"><a class="barra-menu-link" href="#recomendaciones">Bienestar animal</a></li>
+                <li class="barra-menu-item"><a class="barra-menu-link" href="#adopcion">Adopción</a></li>
+                <li class="barra-menu-item"><a class="barra-menu-link" href="#ayudar">Cómo ayudar</a></li>
+                <li class="barra-menu-item"><a class="barra-menu-link" href="#contacto">Contacto</a></li>
+                <li class="barra-menu-item"><a class="barra-menu-link" href="index.html" target="_blank">Veterinaria</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container text-center mt-3 pt-3 border-top border-secondary">
+            <p class="text-secondary small mb-0">&copy; 2026 Mboriahumi. Molina Sebastian</p>
         </div>
     </footer>
-
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
         crossorigin="anonymous"></script>
